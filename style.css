@@ -1,0 +1,61 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+    background-image: url('https://gifdb.com/images/file/field-trip-book-aesthetic-5qiverzlphowbk8c.gif');
+    background-size: cover;
+
+  }
+  
+  .quiz-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-wrap: auto;
+    padding-bottom: 1000px;
+    
+  }
+  .navbar{
+    background-color: rgb(222, 120, 197);
+    position:fixed;
+    height: 45px;
+    width:100%;
+  }
+
+  .navbar-content{
+    padding-left: 15px;
+    padding-top: 20px;
+    font-style: 'courier';
+    background-color: #ccb1c8;
+    fon
+   }
+  
+  h1 {
+    text-align: center;
+    color: #ae3a9a;
+  }
+  
+  .question {
+    margin-top: 20px;
+    overflow: auto;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  input[type="button"] {
+    background-color: #af4c95;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 10px;
+
+  
+      
+    }
+   
+  
+  
+  

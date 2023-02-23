@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="C:\Users\Aritri Chatterjee\Downloads\NewPortfolio_AC-main\NewPortfolio_AC-main\style.css">
+
+  <title>Quiz</title>
+  
+</head>
+
+<body>
+  <div id="login-form">
+    <h2>Login</h2>
+    <form>
+      <label>Username: <input type="text" class="t1 textbox"></label><br><br>
+      <label>Password: <input type="password" class="t2 textbox"></label><br><br>
+      <input type="button" value="LOGIN" onclick="login()">
+    </form>
+  </div>
+
+  <div id="register-form" style="display: none">
+    <h2>Registration</h2>
+    <form>
+      <label>Username: <input type="text" class="t1 textbox"></label><br><br>
+      <label>Email@com:<input type="text" class=" t2 textbox"></label><br><br>
+      <input type="button" value="REGISTER !" onclick="register()">
+    </form>
+  </div>
+
+  <div id="quiz" style="display: none">
+    <form>
+      <div class="quiz-container">
+        <h1>Quiz</h1>
+        <div class="question">
+          <p>1. Who created Python?</p>
+          <input type="radio" name="question1" value="Steve">Steve
+          <input type="radio" name="question1" value="Marie">Marie
+          <input type="radio" name="question1" value="Guido Van">Guido Van
+
+          <p>2. What is the capital of France?</p>
+          <input type="radio" name="question2" value="Paris">Paris
+          <input type="radio" name="question2" value="Madrid">Madrid
+          <input type="radio" name="question2" value="Rome">Rome
+        </div>
+      </div>
+      <input type="button" value="Submit" onclick="showPoints()">
+    </form> 
+  </div>
+
+  <script>
+    function login() {
+      var loginForm = document.getElementById("login-form");
+      loginForm.style.display = "none";
+
+      var registerForm = document.getElementById("register-form");
+      registerForm.style.display = "block";
+    }
+
+    function register() {
+      var registerForm = document.getElementById("register-form");
+      registerForm.style.display = "none";
+
+      var quiz = document.getElementById("quiz");
+      quiz.style.display = "block";
+    }
+
+    function showPoints() {
+        
+        let question1 = document.querySelector('input[name="question1"]:checked').value;
+        let question2 = document.querySelector('input[name="question2"]:checked').value;
+      
+        let score = 0;
+        if (question1 === "Guido Van") {
+          score++;
+        }
+        if (question2 === "Paris") {
+          score++;
+        }
+      
+        alert("You scored " + score + " out of 2");
+    }
+  </script>
+</body>
+</html>
